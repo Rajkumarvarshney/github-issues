@@ -1,0 +1,22 @@
+.mainn{
+    border: 1px solid black;
+    padding-top: 8px;
+    padding-bottom: 20px;
+    margin-top: 150px;
+    margin-left: 150px;
+    width: 690px;
+    padding-left: 10px;
+    background-color: aqua;
+}
+.first{
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    
+} 
+.sec{
+    display: flex;
+    font-size: 12px;
+    
+    
+}
