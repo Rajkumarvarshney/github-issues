@@ -1,6 +1,8 @@
 import React from "react";
-import "./Nav.css";
-function Navbar() {
+
+import "./Navbar.css";
+
+const Navbar = () => {
   return (
     <div className="mainn">
       <div className="first">

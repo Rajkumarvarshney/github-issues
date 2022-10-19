@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useRef } from "react";
 import axios from "axios";
 import "./App.css";
-import Navbar from "./Components/Navbar";
-import Button from "./Components/Button.jsx";
-import Card from "./Components/Card";
-import Paragraph from "./Components/Paragraph";
+import Navbar from "../Navbar";
+import Button from "../Button";
+import Card from "../Card";
+import Paragraph from "../Paragraph";
 
 function App() {
   const [posts, setPosts] = useState([]);
