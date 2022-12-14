@@ -1,10 +1,9 @@
 import React from "react";
+import './Button.css';
 
-function Button(props) {
+function Button({bColor, content}) {
   return (
-    <div className="btn" style={{ backgroundColor: `#${props.colorr}` }}>
-      <span style={{ fontSize: 12 }}>{props.content}</span>
-    </div>
+      <span className="Button" style={{ backgroundColor: `#${bColor}` }}>{content}</span>
   );
 }
 

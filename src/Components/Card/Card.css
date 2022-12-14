@@ -1,0 +1,38 @@
+.card{
+    display: flex;
+    border: 1px solid #e2e3e3;
+    padding: 8px;
+    gap: 5px;
+}
+
+.card_left{
+    margin-top: 5px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    color: black;
+    border: 3px solid green;
+}
+
+.card_right{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.card_right_top{
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.card_right_heading{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.card_right_bottom{
+    font-size: 12px;
+    color: grey;
+    margin-top: 5px;
+}

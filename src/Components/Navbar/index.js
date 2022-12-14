@@ -4,31 +4,34 @@ import "./Navbar.css";
 
 const Navbar = () => {
   return (
-    <div className="mainn">
-      <div className="first">
-        <div
-          style={{
-            border: "solid",
-            borderColor: "black",
-            borderRadius: 10,
-            height: 5,
-            width: 5,
-            marginRight: 10,
-          }}
-        ></div>
-        <span style={{ marginRight: 10, fontSize: 12 }}>625 Open</span>
-        <span style={{ fontSize: 12 }}>✓ 10,104 Closed</span>
+    <div className="Navbar">
+      <div className="nav_left">
+        <span className="nav_circle"></span>
+        <b>625 Open</b>
+        <span className="nav_closed">✓ 10,104 Closed</span>
       </div>
-      <div className="sec">
-        <div>Author</div>
-        <div style={{ marginLeft: 25, marginRight: 25 }}>labels</div>
-        <div>Projects</div>
-        <div style={{ marginLeft: 25, marginRight: 25 }}>Assignee</div>
-        <div> Milestone</div>
-        <div style={{ marginLeft: 25, marginRight: 25 }}>Sort</div>
+      <div className="nav_right">
+        <span>
+          Author <i className="fa-solid fa-angle-down"></i>
+        </span>
+        <span>
+          Label <i className="fa-solid fa-angle-down"></i>
+        </span>
+        <span className="remove">
+          Projects <i className="fa-solid fa-angle-down"></i>
+        </span>
+        <span className="remove">
+          Milestones <i className="fa-solid fa-angle-down"></i>
+        </span>
+        <span>
+          Assignee <i className="fa-solid fa-angle-down"></i>
+        </span>
+        <span>
+          Sort <i className="fa-solid fa-angle-down"></i>
+        </span>
       </div>
     </div>
   );
-}
+};
 
 export default Navbar;

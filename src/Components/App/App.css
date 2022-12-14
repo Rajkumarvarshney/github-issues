@@ -1,23 +1,45 @@
-
-.container{ 
-    border: 1px solid black; 
-    width: 700px;
-    margin-left: 150px;
-
+.App{
+    padding: 50px 200px;
 }
-.main{
+
+.content{
+    border: 1px solid #e2e3e3;
+    border-radius: 5px;
+}
+
+.mainLoader{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;  
-    padding-top: 10px;   
+    justify-content: center;
+    margin-top: 20px;
 }
-.btn{
-    border-radius: 10px;
-    padding-left: 8px;
-    padding-right: 8px;
-    padding-bottom: 3px;
-    margin-left: 5px;
-    margin-right: 5px;
 
-}
+.loader {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+  }
+  .loader:after {
+    content: " ";
+    display: block;
+    width: 35px;
+    height: 35px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid black;
+    border-color:  black transparent;
+    animation: loader 1.2s linear infinite;
+  }
+  @keyframes loader {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .App{
+      padding:0;
+    }
+  }
